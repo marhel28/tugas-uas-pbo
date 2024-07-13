@@ -65,7 +65,7 @@ CREATE TABLE `mahasiswa` (
 --
 
 INSERT INTO `mahasiswa` (`nim`, `nama`, `alamat`, `telepon`) VALUES
-(2022150075, 'ammar abu fadhel', 'banjarnegara', '08771231415');
+(2022150075, 'khadafi ali', 'banjarnegara', '08771231415');
 
 -- --------------------------------------------------------
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahasiswa Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" alt="Perpustakaan" width="30" height="30" class="d-inline-block align-top">
+    <span class="brand-text">Perpustakaan</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="pengembalian.html">Laporan Pengembalian<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tambah_data_buku.html">Buku</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="tambah_mahasiswa.html">Mahasiswa</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tester.html">tester</a>
+        </li>
+
+    </ul>
+  </div>
+</nav>
+    <div class="container">
+        <h2 class="title">Formulir Mahasiswa</h2>
+        <p class="subtitle">Form untuk peminjaman buku Perpustakaan.</p>
+        <form method="POST" action="../apps/mahasiswa.php">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat" class="form-control" placeholder="Alamat Rumah" required>
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="number" id="nim" name="nim" class="form-control" placeholder="NIM" required>
+            </div>
+            <div class="form-group">
+                <label for="no_telp">No. Telp</label>
+                <input type="tel" id="no_telp" name="no_telp" class="form-control" placeholder="No. Telp" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
